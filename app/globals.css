@@ -1,27 +1,133 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Add Shad/CN Theme */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&display=swap');
 
-@media (prefers-color-scheme: dark) {
+
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    /* Font Families */
+    --font-family-base: 'Libre Franklin', sans-serif;
+    --font-family-script: 'Allura', cursive;
+    --font-family-script2: 'Corinthia', cursive;
+    --font-family-logo: 'Cormorant Garamond', serif;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+    /* Script font for special text */
+    /* Custom script font for special text */
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    /* Theme Colors */
+    --background: 45, 41%, 96%;
+    /* hsl(45, 41%, 96%) */
+    --foreground: 20, 20%, 15%;
+    /* hsl(20, 20%, 15%) */
+
+    /* Card Colors */
+    --card: 45, 10%, 98%;
+    /* hsl(45, 10%, 98%) */
+    --card-foreground: 20, 20%, 15%;
+    /* hsl(20, 20%, 15%) */
+
+    /* Popover Colors */
+    --popover: 45, 20%, 90%;
+    /* hsl(45, 20%, 90%) */
+    --popover-foreground: 20, 20%, 10%;
+    /* hsl(20, 20%, 10%) */
+
+    /* Primary and Secondary Colors */
+    --primary: 97, 33%, 19%;
+    /* hsl(36, 40%, 55%) */
+    --primary-foreground: 0, 0%, 100%;
+    /* hsl(0, 0%, 100%) */
+    --secondary: 82, 41%, 27%;
+    /* hsl(45, 30%, 80%) */
+    --secondary-foreground: 20, 20%, 15%;
+    /* hsl(20, 20%, 15%) */
+
+    /* Accent Colors */
+    --accent: 70, 40%, 27%;
+    /* hsl(36, 50%, 65%) */
+    --accent-foreground: 0, 0%, 100%;
+    /* hsl(0, 0%, 100%) */
+
+    /* Muted Colors */
+    --muted: 45, 40%, 93%;
+    /* hsl(45, 40%, 93%) */
+    --muted-foreground: 20, 10%, 50%;
+    /* hsl(20, 10%, 50%) */
+
+    /* Destructive Colors */
+    --destructive: 0, 60%, 60%;
+    /* hsl(0, 60%, 60%) */
+    --destructive-foreground: 0, 0%, 100%;
+    /* hsl(0, 0%, 100%) */
+
+    /* Other Colors */
+    --border: 30, 10%, 80%;
+    /* hsl(30, 10%, 80%) */
+    --input: 45, 40%, 95%;
+    /* hsl(45, 40%, 95%) */
+    --ring: 36, 40%, 55%;
+    /* hsl(36, 40%, 55%) */
+
+    /* Chart Colors */
+    --chart-1: 220, 90%, 50%;
+    /* Example HSL colors */
+    --chart-2: 120, 70%, 40%;
+    --chart-3: 50, 100%, 60%;
+    --chart-4: 10, 100%, 50%;
+    --chart-5: 280, 60%, 60%;
+
+    /* Sidebar Colors */
+    --sidebar-background: 45, 20%, 95%;
+    --sidebar-foreground: 20, 20%, 10%;
+    --sidebar-primary: 36, 40%, 55%;
+    --sidebar-primary-foreground: 0, 0%, 100%;
+    --sidebar-accent: 70, 40%, 37%;
+    --sidebar-accent-foreground: 0, 0%, 100%;
+    --sidebar-border: 30, 10%, 80%;
+    --sidebar-ring: 36, 40%, 55%;
+
+    /* Border Radius */
+    --radius: 0.5rem;
   }
+
+  /* Base styles */
+  body {
+    font-family: var(--font-family-base);
+    color: hsl(var(--foreground));
+    background-color: hsl(var(--background));
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-family-heading);
+  }
+
+  /* Default Base Font */
+  .font-sans {
+    font-family: var(--font-family-base);
+  }
+
+  /* Script Fonts */
+  .font-script {
+    font-family: var(--font-family-script);
+  }
+
+  .font-script2 {
+    font-family: var(--font-family-script2);
+  }
+
+  /* Logo Font */
+  .font-logo {
+    font-family: var(--font-family-logo);
+  }
+  
 }
