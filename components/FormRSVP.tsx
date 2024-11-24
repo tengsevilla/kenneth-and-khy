@@ -140,7 +140,7 @@ export default function FormRSVP() {
                                 name="rsvpNumOfAttendees"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Number of Attendees:</FormLabel>
+                                        <FormLabel>Number of Attendees (including yourself):</FormLabel>
                                         <FormControl>
                                             <Input {...field} />
                                         </FormControl>

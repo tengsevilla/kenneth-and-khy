@@ -33,7 +33,6 @@ import {
 } from "@/components/ui/table"
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
 import { FormUpdateGuest } from "./FormUpdateGuest"
-import { getAllGuestRSVP } from "@/lib/model/useGuestAPI"
 
 export type TableColumns = {
     rsvpId: string,
@@ -42,13 +41,17 @@ export type TableColumns = {
     rsvpNumOfAttendees: string,
 }
 
-export function TableManageGuests() {
-    const [data, setData] = React.useState<TableColumns[]>([])
+interface Props {
+    data: TableColumns[];
+    isFetching: boolean;
+    onUpdate: (data: TableColumns) => void;
+}
+export function TableManageGuests({ data, isFetching, onUpdate }: Props) {
     const [sorting, setSorting] = React.useState<SortingState>([])
     const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
         []
     )
-    const [isFetching, setIsFetching] = React.useState(false);
+
     const [columnVisibility, setColumnVisibility] =
         React.useState<VisibilityState>({})
     const [rowSelection, setRowSelection] = React.useState({})
@@ -107,13 +110,7 @@ export function TableManageGuests() {
                             </Button>
                         </PopoverTrigger>
                         <PopoverContent className="w-80">
-                            <FormUpdateGuest guest={guest} onSubmitted={(updatedGuest) => {
-                                setData((prevData) =>
-                                    prevData.map((item) =>
-                                        item.rsvpId === updatedGuest.rsvpId ? updatedGuest : item
-                                    )
-                                );
-                            }} />
+                            <FormUpdateGuest guest={guest} onSubmitted={(updatedGuest) => handleUpdate(updatedGuest)} />
                         </PopoverContent>
                     </Popover>
                 )
@@ -138,21 +135,12 @@ export function TableManageGuests() {
             rowSelection,
         },
     });
-    React.useEffect(() => {
-        const fetchData = async () => {
-            setIsFetching(true); // Start fetching
-            try {
-                const res = await getAllGuestRSVP();
-                setData(res.data);
-            } catch (error) {
-                console.error("Error fetching RSVP data:", error);
-            } finally {
-                setIsFetching(false); // Done fetching
-            }
-        };
 
-        fetchData();
-    }, []);
+    const handleUpdate = (updatedGuest: TableColumns) => {
+        // Simulate a change in guest data (replace with actual logic)
+        onUpdate(updatedGuest);
+    };
+
     return (
         <div className="w-full">
             <div className="flex items-center py-4">
