@@ -13,7 +13,7 @@ import {
   SidebarRail,
   useSidebar,
 } from "@/components/ui/sidebar"
-import { Gem, Gift, Mail, MapPinned, Shirt, UsersRound, Camera } from "lucide-react"
+import { Gem, Gift, Mail, MapPinned, Shirt, UsersRound, Camera, CircleHelp } from "lucide-react"
 import { useIsMobile } from "@/hooks/use-mobile"
 import useNavigationStore from "@/lib/store/useStoreNavigation";
 
@@ -28,10 +28,10 @@ const data = {
     { title: "Entourage", url: "#entourage", icon: <UsersRound /> },
     { title: "Attire", url: "#attire", icon: <Shirt /> },
     { title: "Gift Guide", url: "#gift-guide", icon: <Gift /> },
-    // { title: "FAQs", url: "#faqs", icon: <CircleHelp /> },
     { title: "Snap and share!", url: "#snap-and-share", icon: <Camera /> },
     { title: "RSVP", url: "#rsvp", icon: <Mail /> },
     { title: "Location Map", url: "#location", icon: <MapPinned /> },
+    { title: "FAQs", url: "#faqs", icon: <CircleHelp /> },
   ],
 };
 

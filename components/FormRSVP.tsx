@@ -75,7 +75,7 @@ export default function FormRSVP() {
             </div>
             <div className="my-8 text-center">
                 <div className="text-xs md:text-sm lg:text-md xl:text-md mb-2">
-                    If you happen to recieve this invite.
+                    If you happen to receive this invite.
                 </div>
                 <div className="text-xs md:text-sm lg:text-md xl:text-md mb-2">
                     We have reserved seat/s for you.
@@ -84,7 +84,7 @@ export default function FormRSVP() {
                     A favor of response is requested
                 </div>
                 <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                    on or before (DATE)
+                    on or before Dec 10, 2024
                 </div>
             </div>
             <Form {...form}>
@@ -151,19 +151,17 @@ export default function FormRSVP() {
                         )
                     }
 
-                    {/* Additional Information */}
-                    <FormItem>
-                        <FormLabel>
-                            If you any inquiries, kindly contact:
-                            Kobe Bryant
-                        </FormLabel>
-                    </FormItem>
-
                     {/* Submit Button */}
                     <Button type="submit" className="w-full" isLoading={isLoading}>
                         Submit
                     </Button>
                 </form>
+                {/* Additional Information */}
+                <div className="text-center mt-8">
+                    If you any inquiries, kindly contact:<br />
+                    Kenneth - 09275044618<br />
+                    Khy - 09452613353
+                </div>
             </Form>
             <DialogConfirmed
                 name={form.getValues('rsvpGuest')}

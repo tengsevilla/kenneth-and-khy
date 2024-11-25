@@ -290,8 +290,8 @@ export const DivSnapAndShare = () => {
                 <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
                     OUR BEST DAY WITH YOU.
                 </div>
-                <div className="text-md md:text-md lg:text-lg xl:text-lg uppercase">
-                    #LAKERSFORLIFE
+                <div className="text-md md:text-md lg:text-lg xl:text-lg">
+                    #aLifetimeKHYmmitmentWithKENNETH
                 </div>
             </div>
         </div>
@@ -325,6 +325,45 @@ export const DivLocation = () => {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
+            </div>
+        </div>
+    )
+}
+
+export const DivFAQs = () => {
+
+    return (
+        <div className="rounded-2xl bg-secondary text-center text-white py-8 md:py-16 flex flex-col items-center font-base">
+            <div className="font-script text-5xl md:text-5xl lg:text-6xl xl:text-6xl">
+                FAQs
+            </div>
+            <div className="flex flex-col gap-2">
+                <div className="text-xs md:text-xs lg:text-sm xl:text-sm font-bold uppercase mt-8">WHEN SHOULD I RSVP?</div>
+                <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
+                    PLEASE RSVP NO LATER THAN DEC 10, 2024, YOU MAY SEND US PERSONAL MESSAGE ON FACEBOOK.
+                </div>
+
+                <div className="text-xs md:text-xs lg:text-sm xl:text-sm font-bold uppercase mt-8">WHAT TIME SHOULD I ARRIVE?</div>
+                <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
+                    CEREMONY BEGINS AT 4:00 PM, WE RECOMMEND YOU AIM TO ARRIVE BY 3:30 PM TO ENSURE YOU ARE SEATED ON TIME
+                </div>
+
+
+                <div className="text-xs md:text-xs lg:text-sm xl:text-sm font-bold uppercase mt-8"> CAN I BRING A GUEST?</div>
+                <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
+                    IF YOU RECEIVED A PLUS ONE, YOUR GUEST&apos;S NAME IS LISTED ON YOUR INVITATION AND WILL APPEAR UNDER YOUR NAME WHEN YOU RSVP.
+                </div>
+                <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
+                    OTHERWISE, WE WOULD LOVE TO KEEP THE WEDDING AS AN INTIMATE EVENT WITH CLOSE FRIENDS AND FAMILY.
+                </div>
+
+                <div className="text-xs md:text-xs lg:text-sm xl:text-sm font-bold uppercase mt-8">CAN I BRING MY KIDS?</div>
+                <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
+                    AS MUCH AS WE WOULD LOVE TO ACCOMMODATE YOUR DEAR CHILDREN, THIS IS AN ADULT ONLY EVENT.
+                </div>
+                <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
+                    THE KIDS IN OUR WEDDING ARE LIMITED ONLY FOR THE LITTLE ONES WHO ARE PART OF THE ENTOURAGE.
+                </div>
             </div>
         </div>
     )

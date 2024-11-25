@@ -1,5 +1,5 @@
 "use client"
-import { DivAttire, DivEntourage, DivGiftGuide, DivLocation, DivSnapAndShare, DivWedding } from "@/components/DivSections";
+import { DivAttire, DivEntourage, DivFAQs, DivGiftGuide, DivLocation, DivSnapAndShare, DivWedding } from "@/components/DivSections";
 import FormRSVP from "@/components/FormRSVP";
 import { ECookies, EVENT_ID } from "@/lib/model";
 import { fetchEvent } from "@/lib/model/useEventAPI";
@@ -24,6 +24,7 @@ export default function Home() {
     "#snap-and-share": useRef<HTMLDivElement>(null),
     "#rsvp": useRef<HTMLDivElement>(null),
     "#location": useRef<HTMLDivElement>(null),
+    "#faqs": useRef<HTMLDivElement>(null),
   };
 
   // Scroll to the active section when `activeUrl` changes
@@ -92,6 +93,10 @@ export default function Home() {
           <DivLocation />
         </div>
 
+        {/* #faqs */}
+        <div ref={refs["#faqs"]}>
+          <DivFAQs />
+        </div>
       </div>
     </div>
   );
