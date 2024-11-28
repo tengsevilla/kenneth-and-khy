@@ -20,7 +20,7 @@ import Carousel7 from "/lib/assets/carousel/7.jpg"; // Ensure correct import pat
 
 export function CarouselImages() {
     const plugin = React.useRef(
-        Autoplay({ delay: 2000, stopOnInteraction: true })
+        Autoplay({ delay: 2000, stopOnInteraction: false })
     )
     const images = [
         Carousel1,
