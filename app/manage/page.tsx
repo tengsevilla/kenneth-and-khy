@@ -36,8 +36,8 @@ export default function Manage() {
             <div>
                 <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-4">
                     <div className="text-lg">Total Respondents: {data.length}</div>
-                    <div className="text-lg">Total Attending: {guestsAttending}</div>
-                    <div className="text-lg">Total Not Attending: {guestsNotAttending}</div>
+                    <div className="text-lg">Attending: {guestsAttending}</div>
+                    <div className="text-lg">Not Attending: {guestsNotAttending}</div>
                 </div>
             </div>
 
