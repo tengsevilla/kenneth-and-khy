@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Layout from "@/components/Layout/Layout";
 import { Libre_Franklin, Allura, Corinthia, Cormorant_Garamond } from "next/font/google";
-
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 export const metadata: Metadata = {
   title: "K & K Wedding Invite",
   description: "Kenneth & Ky Wedding Invitaiton",
@@ -52,6 +53,8 @@ export default function RootLayout({
 
         <Layout>
           {children}
+          <Analytics />
+          <SpeedInsights />
         </Layout>
       </body>
     </html>
