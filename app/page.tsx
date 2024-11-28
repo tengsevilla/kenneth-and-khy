@@ -5,7 +5,7 @@ import { ECookies, EVENT_ID } from "@/lib/model";
 import { fetchEvent } from "@/lib/model/useEventAPI";
 import useNavigationStore from "@/lib/store/useStoreNavigation";
 import { getCookie, setCookie } from "@/lib/utils";
-import { useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
 
 type SectionRefs = {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -30,6 +30,7 @@ export default function Home() {
   // Scroll to the active section when `activeUrl` changes
   useEffect(() => {
     const ref = refs[activeUrl];
+
     if (ref?.current) {
       const element = ref.current;
       const yOffset = -80; // Optional offset to fine-tune positioning
@@ -89,12 +90,17 @@ export default function Home() {
 
         {/* #rsvp */}
         <div ref={refs["#rsvp"]} className="rounded-2xl bg-primary text-white py-8 md:py-16 px-8 md:py-0 flex flex-col items-center gap-8 font-base">
-          <FormRSVP />
+          <Suspense fallback={<div>Loading...</div>}>
+            <FormRSVP />
+          </Suspense>
         </div>
 
         {/* #location */}
         <div ref={refs["#location"]}>
+
           <DivLocation />
+
+
         </div>
 
         {/* #faqs */}
