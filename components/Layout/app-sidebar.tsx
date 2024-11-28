@@ -64,24 +64,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                       {item.icon}{item.title}
                     </a>
                   </SidebarMenuButton>
-                  {/* {item.items?.length ? (
-                    <SidebarMenuSub>
-                      {item.items.map((item) => (
-                        <SidebarMenuSubItem key={item.title}>
-                          <SidebarMenuSubButton
-                            asChild
-                            isActive={activeUrl === item.url}
-                            onClick={() => {
-                              setActiveUrl(item.url);
-                              if (isMobile) toggleSidebar(); // Close sidebar after selection
-                            }}
-                          >
-                            <a href={item.url}>{item.icon}{item.title}</a>
-                          </SidebarMenuSubButton>
-                        </SidebarMenuSubItem>
-                      ))}
-                    </SidebarMenuSub>
-                  ) : null} */}
                 </SidebarMenuItem>
               ))}
             </SidebarMenu>

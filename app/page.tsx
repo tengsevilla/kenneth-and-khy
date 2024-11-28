@@ -1,5 +1,5 @@
 "use client"
-import { DivAttire, DivEntourage, DivFAQs, DivGiftGuide, DivLocation, DivSnapAndShare, DivWedding } from "@/components/DivSections";
+import { DivAttire, DivEntourage, DivFAQs, DivGiftGuide, DivImages, DivLocation, DivSnapAndShare, DivWedding } from "@/components/DivSections";
 import FormRSVP from "@/components/FormRSVP";
 import { ECookies, EVENT_ID } from "@/lib/model";
 import { fetchEvent } from "@/lib/model/useEventAPI";
@@ -63,6 +63,10 @@ export default function Home() {
           <DivWedding />
         </div>
 
+        <div>
+          <DivImages />
+        </div>
+
         {/* #entourage */}
         <div ref={refs["#entourage"]}>
           <DivEntourage />
@@ -84,7 +88,7 @@ export default function Home() {
         </div>
 
         {/* #rsvp */}
-        <div ref={refs["#rsvp"]} className="rounded-2xl bg-secondary text-white py-8 md:py-16 px-8 md:py-0 flex flex-col items-center gap-8 font-base">
+        <div ref={refs["#rsvp"]} className="rounded-2xl bg-primary text-white py-8 md:py-16 px-8 md:py-0 flex flex-col items-center gap-8 font-base">
           <FormRSVP />
         </div>
 

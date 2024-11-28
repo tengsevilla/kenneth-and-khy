@@ -152,7 +152,7 @@ export default function FormRSVP() {
                     }
 
                     {/* Submit Button */}
-                    <Button type="submit" className="w-full" isLoading={isLoading}>
+                    <Button type="submit" className="w-full" isLoading={isLoading} variant={'secondary'}>
                         Submit
                     </Button>
                 </form>

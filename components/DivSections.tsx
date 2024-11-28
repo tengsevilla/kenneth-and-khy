@@ -1,48 +1,91 @@
+import { CarouselImages } from "./CarouselImages";
 import ColorPalette from "./ColorPallete"
-
+import heroImage from "/lib/assets/hero-min.jpg"; // Ensure correct import path
 
 export const DivWedding = () => {
     return (
-        <div className="rounded-2xl bg-muted text-center text-primary py-8 md:py-16">
-            <div className="font-script2">
-                <div className="text-8xl md:text-[10rem] lg:text-9xl xl:text-[10rem]">Kenneth</div>
-                <div className="text-8xl md:text-[10rem] lg:text-9xl xl:text-[10rem] -mt-10 md:-mt-12 lg:-mt-16">
-                    & Khy
-                </div>
-            </div>
-            <div className="mt-8 md:mt-10">
-                <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                    REQUEST THE HONOR OF YOUR PRESENCE
-                </div>
-                <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                    AS WE UNITE AS ONE IN OUR MARRIAGE
-                </div>
-            </div>
-            <div className="mt-8 md:mt-10">
-                <div className="text-lg md:text-md lg:text-4xl xl:text-2xl">
-                    SUNDAY | DECEMBER 22, 2024
-                </div>
-                <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                    FOUR O&apos;SCLOCK IN THE EVENING | 4:00 PM
-                </div>
-                <div className="mt-8 md:mt-10">
-                    <div className="text-sm md:text-md lg:text-lg xl:text-lg">NATURE&apos;S VILLAGE RESORT</div>
-                    <div className="text-sm md:text-md lg:text-lg xl:text-lg">TALISAY CITY</div>
+        <div
+            className="text-center text-primary"
+        >
+            <div
+                className="relative h-[850px] md:h-[980px] text-muted pt-24 rounded-2xl"
+                style={{
+                    backgroundImage: `url(${heroImage.src})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }}
+            >
+                {/* Overlay to ensure text is legible */}
+                <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
+
+                {/* Content */}
+                <div className="relative z-10 font-script2">
+                    {/* Upper content of the hero image */}
+                    <div className="text-9xl">
+                        Kenneth
+                    </div>
+                    <div className="text-9xl -mt-4 md:-mt-6 lg:-mt-8">
+                        & Khy
+                    </div>
                 </div>
 
-                <div className="mt-8 md:mt-10 font-script text-2xl md:text-2xl lg:text-4xl xl:text-4xl">
-                    reception to follow at
+                <div className="relative z-10 mt-48">
+                    <div className="text-xs md:text-sm lg:text-md xl:text-lg">
+                        REQUEST THE HONOR OF YOUR PRESENCE
+                    </div>
+                    <div className="text-xs md:text-sm lg:text-md xl:text-lg">
+                        AS WE UNITE AS ONE IN OUR MARRIAGE
+                    </div>
                 </div>
-                <div className="mt-8 md:mt-10">
-                    PADRE PIO HALL
+
+                {/* Lower content */}
+                <div className="relative z-10 mt-6 md:mt-8">
+                    <div className="text-sm md:text-lg lg:text-2xl xl:text-3xl">
+                        SUNDAY | DECEMBER 22, 2024
+                    </div>
+                    <div className="text-xs md:text-sm lg:text-md xl:text-lg">
+                        FOUR O&apos;CLOCK IN THE EVENING | 4:00 PM
+                    </div>
+                    <div className="mt-4 md:mt-6">
+                        <div className="text-sm md:text-md lg:text-lg xl:text-xl">
+                            NATURE&apos;S VILLAGE RESORT
+                        </div>
+                        <div className="text-sm md:text-md lg:text-lg xl:text-xl">
+                            TALISAY CITY
+                        </div>
+                    </div>
+
+                    <div className="mt-4 md:mt-6 font-script text-lg md:text-xl lg:text-2xl xl:text-3xl">
+                        reception to follow at
+                    </div>
+                    <div className="mt-2 md:mt-4 text-sm md:text-md lg:text-lg xl:text-xl">
+                        PADRE PIO HALL
+                    </div>
                 </div>
+
             </div>
+
+            {/* <div className="rounded-2xl bg-muted mt-4 flex justify-center p-8 w-full overflow-hidden">
+
+            </div> */}
+
+
         </div>
+
     )
 }
+
+export const DivImages = () => {
+    return (
+        <div className="rounded-2xl bg-muted text-center text-primary py-4 md:py-8 flex justify-center items-center w-full">
+            <CarouselImages />
+        </div>
+    );
+};
+
 export const DivEntourage = () => {
     return (
-        <div className="rounded-2xl bg-secondary text-center text-white py-8 md:py-16 flex flex-col items-center gap-8 font-base">
+        <div className="rounded-2xl bg-primary text-center text-white py-8 md:py-16 flex flex-col items-center gap-8 font-base">
             <div className="font-script text-5xl md:text-5xl lg:text-6xl xl:text-6xl">
                 The Entourage
             </div>
@@ -250,7 +293,7 @@ export const DivAttire = () => {
 
 export const DivGiftGuide = () => {
     return (
-        <div className="rounded-2xl bg-secondary text-center text-white py-8 md:py-16 flex flex-col items-center font-base">
+        <div className="rounded-2xl bg-primary text-center text-white py-8 px-4 md:py-16 flex flex-col items-center font-base">
             <div className="font-script text-5xl md:text-5xl lg:text-6xl xl:text-6xl">
                 Gift Guide
             </div>
@@ -290,8 +333,11 @@ export const DivSnapAndShare = () => {
                 <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
                     OUR BEST DAY WITH YOU.
                 </div>
-                <div className="text-md md:text-md lg:text-lg xl:text-lg">
+                <div className="text-md md:text-md lg:text-lg xl:text-lg mt-2">
                     #aLifetimeKHYmmitmentWithKENNETH
+                </div>
+                <div className="text-md md:text-md lg:text-lg xl:text-lg mt-0">
+                    #DreamKHYmeTrueofKENNETH
                 </div>
             </div>
         </div>
@@ -333,7 +379,7 @@ export const DivLocation = () => {
 export const DivFAQs = () => {
 
     return (
-        <div className="rounded-2xl bg-secondary text-center text-white py-8 md:py-16 flex flex-col items-center font-base">
+        <div className="rounded-2xl bg-primary text-center text-white py-8 md:py-16 px-4 flex flex-col items-center font-base">
             <div className="font-script text-5xl md:text-5xl lg:text-6xl xl:text-6xl">
                 FAQs
             </div>
