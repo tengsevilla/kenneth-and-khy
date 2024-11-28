@@ -1,6 +1,8 @@
 import { getCookie } from "../utils";
 
 // @TODO Update the event ID
+// Test ID: 17974dca-ceff-49a6-a987-d77418dedbec
+// Event ID: 78d8a2a8-3422-47e9-aa5d-97426010340e
 export const EVENT_ID = "17974dca-ceff-49a6-a987-d77418dedbec";
 export const VALID_GUESTS_LIST = [];
 

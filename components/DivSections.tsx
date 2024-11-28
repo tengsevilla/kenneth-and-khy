@@ -108,7 +108,7 @@ export const DivEntourage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-12">
                     {/* Male Sponsors */}
                     <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                        <p>Mr. Francisco B. Inocentes</p>
+                        <p>Mr. Francis B. Inocentes</p>
                         <p>Engr. Dave R. Abaño</p>
                         <p>Mr. Randolph G. Aleman</p>
                         <p>Mr. Dondy A. Depositario</p>

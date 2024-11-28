@@ -17,29 +17,45 @@ import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "./ui/radio-group-inverted";
 import { DialogConfirmed } from "./DialogConfirmed";
 import { createGuestRSVP, IGuest } from "@/lib/model/useGuestAPI";
+import { useSearchParams } from "next/navigation";
 
-const formSchema = z.object({
-    rsvpAttending: z.string().min(1, "This field is required"),
-    rsvpGuest: z.string().min(1, "Please enter your name"),
-    rsvpNumOfAttendees: z
-        .string()
-        .regex(/^\d+$/, "Please enter a valid number")
-        .max(2, "Max of 2 digits allowed")
-        .optional(),
-});
+// const formSchema = z.object({
+//     rsvpAttending: z.string().min(1, "This field is required"),
+//     rsvpGuest: z.string().min(1, "Please enter your name"),
+//     rsvpNumOfAttendees: z
+//         .string()
+//         .regex(/^\d+$/, "Please enter a valid number")
+//         .max(2, "Max of 2 digits allowed")
+//         .optional(),
+// });
 
 export default function FormRSVP() {
     const [isOpen, setIsOpen] = React.useState(false);
     const [isLoading, setIsLoading] = React.useState(false);
+    const searchParams = useSearchParams();
+    const name = searchParams.get("name") ?? "";
+    const max = searchParams.get("max") ?? "2";
+    const formSchema = z.object({
+        rsvpAttending: z.string().min(1, "This field is required"),
+        rsvpGuest: z.string().min(1, "Please enter your name"),
+        rsvpNumOfAttendees: z
+            .string()
+            .regex(/^\d+$/, "Please enter a valid number")
+            .refine((val) => parseInt(val, 10) <= parseInt(max), {
+                message: `The number of attendees allowed for you is ${max}`,
+            })
+            .optional(),
+    });
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
             rsvpAttending: "",
-            rsvpGuest: "",
+            rsvpGuest: name,
             rsvpNumOfAttendees: "1",
         },
     });
     const isAttending = form.watch("rsvpAttending");
+
     function onSubmit(values: z.infer<typeof formSchema>) {
         setIsLoading(true);
         try {
