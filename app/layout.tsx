@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kenneth & Khy Wedding",
     description: "Join us to celebrate our union on December 22, 2024, at Nature's Village Resort.",
-    url: "https://kenneth-and-khy.vercel.app/images/preview.jpg",
+    url: "https://kenneth-and-khy.vercel.app",
     images: [
       {
         url: "https://kenneth-and-khy.vercel.app/images/preview.jpg",
