@@ -155,7 +155,7 @@ export default function FormRSVP() {
                                 control={form.control}
                                 name="rsvpNumOfAttendees"
                                 render={({ field }) => (
-                                    <FormItem>
+                                    <FormItem hidden={true}>
                                         <FormLabel>Number of Attendees (including yourself):</FormLabel>
                                         <FormControl>
                                             <Input {...field} />

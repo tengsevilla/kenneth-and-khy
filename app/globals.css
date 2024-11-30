@@ -8,13 +8,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Corinthia&display=swap');
 
-
 @layer base {
   :root {
     /* Font Families */
     --font-family-base: 'Libre Franklin', sans-serif;
     --font-family-script: 'Allura', cursive;
     --font-family-script2: 'Corinthia', cursive;
+    /* --font-family-script3: 'Almyra', sans-serif; */
     --font-family-logo: 'Cormorant Garamond', serif;
 
     /* Script font for special text */
@@ -129,5 +129,5 @@
   .font-logo {
     font-family: var(--font-family-logo);
   }
-  
+
 }

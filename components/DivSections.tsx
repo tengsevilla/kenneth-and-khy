@@ -19,17 +19,17 @@ export const DivWedding = () => {
                 <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
 
                 {/* Content */}
-                <div className="relative z-10 font-script2">
+                <div className="relative z-10 font-script3">
                     {/* Upper content of the hero image */}
-                    <div className="text-9xl">
+                    <div className="text-8xl md:text-9xl lg:text-9xl">
                         Kenneth
                     </div>
-                    <div className="text-9xl -mt-4 md:-mt-6 lg:-mt-8">
+                    <div className="text-8xl md:text-9xl lg:text-9xl -mt-2 md:-mt-4 lg:-mt-6">
                         & Khy
                     </div>
                 </div>
 
-                <div className="relative z-10 mt-48">
+                <div className="relative z-10 mt-64">
                     <div className="text-xs md:text-sm lg:text-md xl:text-lg">
                         REQUEST THE HONOR OF YOUR PRESENCE
                     </div>
@@ -44,7 +44,7 @@ export const DivWedding = () => {
                         SUNDAY | DECEMBER 22, 2024
                     </div>
                     <div className="text-xs md:text-sm lg:text-md xl:text-lg">
-                        FOUR O&apos;CLOCK IN THE EVENING | 4:00 PM
+                        FOUR O&apos;CLOCK IN THE AFTERNOON | 4:00 PM
                     </div>
                     <div className="mt-4 md:mt-6">
                         <div className="text-sm md:text-md lg:text-lg xl:text-xl">
@@ -155,7 +155,7 @@ export const DivEntourage = () => {
                 </div>
                 <div>
                     <div className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Maid of Honor</div>
-                    <p className="text-xs md:text-sm lg:text-md xl:text-md">Sychelle Love D. Descallar</p>
+                    <p className="text-xs md:text-sm lg:text-md xl:text-md">Sychelle Love B. Descallar</p>
                 </div>
             </div>
 

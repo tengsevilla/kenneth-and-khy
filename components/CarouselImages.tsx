@@ -37,13 +37,13 @@ export function CarouselImages() {
             opts={{
                 align: "start",
             }}
-            className="w-full max-w-sm overflow-hidden mx-auto"
+            className="w-full max-w-sm overflow-hidden mx-auto p-4"
         >
             <CarouselContent className="flex-nowrap gap-4">
                 {images.map((imageSrc, index) => (
                     <CarouselItem
                         key={index}
-                        className="flex-shrink-0 w-full sm:w-[75%] md:w-[50%] lg:w-[33.33%] p-4 box-border"
+                        className="flex-shrink-0 w-full sm:w-[75%] md:w-[50%] lg:w-[33.33%] box-border"
                     >
                         <Card>
                             <CardContent className="flex items-center justify-center p-2">

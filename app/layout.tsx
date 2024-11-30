@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Layout from "@/components/Layout/Layout";
+import localFont from 'next/font/local';
 import { Libre_Franklin, Allura, Corinthia, Cormorant_Garamond } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+
 export const metadata: Metadata = {
   title: "K & K Wedding Invite",
   description: "Kenneth & Ky Wedding Invitaiton",
@@ -38,6 +40,12 @@ export const cormorantGaramond = Cormorant_Garamond({
   weight: ["400", "500", "700"], // Logo font weights
 });
 
+// Define the Almyra font with weights
+const almyra = localFont({
+  src: '/fonts/Almyra.ttf', // Correct path if it's in `public/fonts`
+  variable: '--font-family-script3',
+  display: 'swap',
+});
 
 export default function RootLayout({
   children,
@@ -48,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${libreFranklin.variable} ${allura.variable} ${corinthia.variable} ${cormorantGaramond.variable} antialiased`}
+        className={`${libreFranklin.variable} ${allura.variable} ${corinthia.variable} ${cormorantGaramond.variable} ${almyra.variable} antialiased`}
       >
 
         <Layout>

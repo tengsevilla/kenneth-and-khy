@@ -22,6 +22,7 @@ const config: Config = {
 				logo: ["var(--font-family-logo)", "sans-serif"],
 				script: ["var(--font-family-script)", "cursive"], // Add Allura font
 				script2: ["var(--font-family-script2)", "cursive"], // Add Corinthia font
+				script3: ["var(--font-family-script3)", "cursive"],
 			},
 			colors: {
 				background: 'hsl(var(--background))',

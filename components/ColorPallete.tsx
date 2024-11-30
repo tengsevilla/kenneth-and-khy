@@ -16,7 +16,7 @@ const ColorPalette = () => {
             {colors.map((color, index) => (
                 <div
                     key={index}
-                    className="relative w-16 h-16 rounded-full border-4 border-white shadow-md cursor-pointer"
+                    className="relative w-14 h-14 rounded-full border-4 border-white shadow-md cursor-pointer"
                     style={{ backgroundColor: color.hex }}
                     onMouseEnter={() => setTooltip(color.name)} // Show tooltip on hover
                     onMouseLeave={() => setTooltip(null)} // Hide tooltip on hover out
