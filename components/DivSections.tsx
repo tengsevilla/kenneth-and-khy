@@ -276,7 +276,7 @@ export const DivAttire = () => {
                 Gentlemen: Barong Tagalog & slack
             </div>
             <div className="text-sm md:text-sm lg:text-md xl:text-md uppercase">
-                Ladies: Long gown
+                Ladies: Long gown. BEIGE OR CHAMPANGE COLOR
             </div>
 
             <div className="text-xs md:text-xs lg:text-sm xl:text-sm font-bold mb-2 uppercase mt-8">Guests</div>

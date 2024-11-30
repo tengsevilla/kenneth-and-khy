@@ -6,7 +6,7 @@ const ColorPalette = () => {
         { hex: "#354320", name: "Forest Green" },
         { hex: "#596128", name: "Olive Green" },
         { hex: "#BFA16D", name: "Gold Beige" },
-        { hex: "#F2E7CA", name: "Cream" },
+        { hex: "#F7E7CE", name: "Cream / Champange" },
     ];
 
     const [tooltip, setTooltip] = useState<string | null>(null);
