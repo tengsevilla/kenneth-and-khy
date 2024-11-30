@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://kenneth-and-khy.vercel.app",
     images: [
       {
-        url: "https://kenneth-and-khy.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.56ca1b03.jpg&w=640&q=75",
+        url: "https://kenneth-and-khy.vercel.app/images/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Kenneth & Khy Wedding",
