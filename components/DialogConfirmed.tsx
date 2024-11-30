@@ -22,7 +22,7 @@ export function DialogConfirmed(props: Props) {
                 <AlertDialogHeader>
                     <AlertDialogTitle>Your response is confirmed</AlertDialogTitle>
                     <AlertDialogDescription>
-                        Thank you {props.name} for your taking your time answering the invitation.
+                        Thank you, {props.name}, for taking the time in answering the invitation
                     </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>

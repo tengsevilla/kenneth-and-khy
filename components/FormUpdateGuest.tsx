@@ -114,7 +114,7 @@ export function FormUpdateGuest({ guest, onSubmitted }: { guest: TableColumns, o
                         name="rsvpNumOfAttendees"
                         render={({ field }) => (
                             <FormItem className="grid grid-cols-3 items-center gap-4">
-                                <FormLabel htmlFor="numOfAttendees">Num of Attendees</FormLabel>
+                                <FormLabel htmlFor="numOfAttendees">Num of Attendees (including guest)</FormLabel>
                                 <FormControl>
                                     <Input
                                         id="numOfAttendees"

@@ -399,10 +399,10 @@ export const DivFAQs = () => {
 
                 <div className="text-xs md:text-xs lg:text-sm xl:text-sm font-bold uppercase mt-8"> CAN I BRING A GUEST?</div>
                 <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
-                    IF YOU RECEIVED A PLUS ONE, YOUR GUEST&apos;S NAME IS LISTED ON YOUR INVITATION AND WILL APPEAR UNDER YOUR NAME WHEN YOU RSVP.
+                    We would love to keep the wedding an intimate event with close friends and family.
                 </div>
                 <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
-                    OTHERWISE, WE WOULD LOVE TO KEEP THE WEDDING AS AN INTIMATE EVENT WITH CLOSE FRIENDS AND FAMILY.
+                    However, if you would like to bring a guest, please let us know in advance.
                 </div>
 
                 <div className="text-xs md:text-xs lg:text-sm xl:text-sm font-bold uppercase mt-8">CAN I BRING MY KIDS?</div>
