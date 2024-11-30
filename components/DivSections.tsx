@@ -98,7 +98,7 @@ export const DivEntourage = () => {
                 </div>
                 <div>
                     <div className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Bride&apos;s Parent</div>
-                    <p className="text-xs md:text-sm lg:text-md xl:text-md uppercase">Mrs. Viven B. Almaqbali</p>
+                    <p className="text-xs md:text-sm lg:text-md xl:text-md uppercase">MRS. VIVEN B. ALMAQBALI</p>
                 </div>
             </div>
 
@@ -108,41 +108,42 @@ export const DivEntourage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-12">
                     {/* Male Sponsors */}
                     <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                        <p>Mr. Francis B. Inocentes</p>
-                        <p>Engr. Dave R. Abaño</p>
-                        <p>Mr. Randolph G. Aleman</p>
-                        <p>Mr. Dondy A. Depositario</p>
-                        <p>Mr. Julio T. Feliciano</p>
-                        <p>Engr. Danilo M. Condino</p>
-                        <p>Mr. Julio Lozada</p>
-                        <p>Dr. Marc Andrei Palma</p>
-                        <p>Mr. Oclys G. Toong</p>
-                        <p>Mr. Erwin E. Negosa</p>
-                        <p>Mr. Alexis A. Inocentes</p>
-                        <p>Mr. Cipriano Remo</p>
-                        <p>Dr. Alejandro D. Araneta</p>
-                        <p>Mr. Leo Nalagon</p>
-                        <p>Mr. Leonardo Acha</p>
-                        <p>Mr. Demosthenes Toledo</p>
+                        <p>MR. FRANCIS B. INOCENTES</p>
+                        <p>ENGR. DAVE ABAÑO</p>
+                        <p>MR. RANDOLPH G. ALEMAN</p>
+                        <p>MR. DONDY DEPOSITORIO</p>
+                        <p>MR. JULITO L. FELICIANO</p>
+                        <p>ENGR. DANILO M. CONDINO</p>
+                        <p>MR. JULIO LOZADA</p>
+                        <p>DR. MARC ANDREI PALMA</p>
+                        <p>MR. OCLYS G. TOONG</p>
+                        <p>MR. IRWIN NEGOSA</p>
+                        <p>MR. ALEXIS A. INOCENTES</p>
+                        <p>MR. CIPRIANO REMO</p>
+                        <p>DR. ALEJANDRO ARANETA</p>
+                        <p>MR. LEO NALAGON</p>
+                        <p>MR. LEONARDO ANCHA</p>
+                        <p>MR. DEMOSTHENES TOLEDO</p>
                     </div>
+
                     {/* Female Sponsors */}
                     <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                        <p>Mrs. Edith E. Negosa</p>
-                        <p>Mrs. Cecelia T. Abaño</p>
-                        <p>Mrs. Arlene G. Bermejo</p>
-                        <p>Mrs. Sufia C. Depositario</p>
-                        <p>Mrs. Tressa G. Elbanbuena</p>
-                        <p>Mrs. Gina C. Condino</p>
-                        <p>Ms. Lorlinie M. Ortillo</p>
-                        <p>Mrs. Jonalie P. Pabiana</p>
-                        <p>Mrs. Eugene Delight O. Magbanua</p>
-                        <p>Mrs. Jean G. Negosa</p>
-                        <p>Mrs. Chery J. Tan</p>
-                        <p>Mrs. Lily Remo</p>
-                        <p>Dr. Cynthia D. Araneta</p>
-                        <p>Mrs. Leticia Nalagon</p>
-                        <p>Mrs. Theresa G. Garrido</p>
-                        <p>Mrs. Daphne P. Capulan</p>
+                        <p>MRS. EDITH E. NEGOSA</p>
+                        <p>MRS. CECELIA ABAÑO</p>
+                        <p>MRS. ARLENE G. BERMEJO</p>
+                        <p>MRS.MA. SUFIA C. DEPOSITORIO</p>
+                        <p>MRS. MA. TRESSA G. ELBANBUENA</p>
+                        <p>MRS GINA C. CONDINO</p>
+                        <p>MRS LORLINIE M. ORTILLO</p>
+                        <p>MRS. JONALIE G. PABIANIA</p>
+                        <p>MRS EUGENE DELIGHT O. MAGBANUA</p>
+                        <p>MRS. JEAN G. NEGOSA</p>
+                        <p>MS. CHERY TAN</p>
+                        <p>MRS. LILY REMO</p>
+                        <p>DR. CYNTHIA D. ARANETA</p>
+                        <p>MRS LETICIA NALAGON</p>
+                        <p>MRS. THERESA G. GABRIDO</p>
+                        <p>MRS. DAPHNE CAPULAN</p>
                     </div>
                 </div>
             </div>
@@ -151,11 +152,11 @@ export const DivEntourage = () => {
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 text-center uppercase">
                 <div>
                     <div className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Best Man</div>
-                    <p className="text-xs md:text-sm lg:text-md xl:text-md">Engr. Jhedan C. Condino</p>
+                    <p className="text-xs md:text-sm lg:text-md xl:text-md">ENGR. JHEDAN C. CONDINO</p>
                 </div>
                 <div>
                     <div className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Maid of Honor</div>
-                    <p className="text-xs md:text-sm lg:text-md xl:text-md">Sychelle Love B. Descallar</p>
+                    <p className="text-xs md:text-sm lg:text-md xl:text-md">SYCHELLE LOVE B. DESCALLAR</p>
                 </div>
             </div>
 
@@ -164,26 +165,27 @@ export const DivEntourage = () => {
                 <div>
                     <div className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Groomsmen</div>
                     <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                        <p>Dr. Edeson D. Bernasol</p>
-                        <p>Dr. Francis Dominic A. Sevilla</p>
-                        <p>Dr. Vicente G. Bitoliamivsa VI</p>
-                        <p>Dr. Gerson P. Margarse</p>
+                        <p>DR. EDESON D. BERNASOL</p>
+                        <p>DR. FRANCIS DOMINIC A. SEVILLA</p>
+                        <p>DR. VICENTE G. BITOLINAMISA VI</p>
+                        <p>DR. GERSON P. MARGARSE</p>
                         <p>Engr. Dave Nicole T. Abaño</p>
-                        <p>Cirilo B. Descallar II</p>
-                        <p>Stefano Johannes R. Abrantes</p>
-                        <p>Dr. Jaeson A. Bulan</p>
+                        <p>CIRILO B. DESCALLAR II</p>
+                        <p>STEFANO JOHANNES BARRIENTOS</p>
+                        <p>DR. JAESON A. BULAN</p>
                     </div>
                 </div>
                 <div>
                     <div className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Bridesmaids</div>
                     <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                        <p>Kate M. Ballesteros</p>
-                        <p>Vanice T. Bitoliamivsa</p>
-                        <p>Dr. Kirsten Flor L. Inocentes</p>
-                        <p>Zainah Hilal B. Almaqbali</p>
-                        <p>Jezereth Hannah E. Germo</p>
-                        <p>Johnniebeth Hannalet L. Inocentes</p>
-                        <p>Shioppy A. Bitoliamivsa</p>
+                        <p>KATE M. BALLESTEROS</p>
+                        <p>VANICE T. BITOLINAMISA</p>
+                        <p>DR. KIRSTEN FLOR L. INOCENTES</p>
+                        <p>ZAIANAH HILAL B. ALMAQBALI</p>
+                        <p>AIAH T. BITOLINAMISA</p>
+                        <p>JEZERENE HANNAH  J. GERMO</p>
+                        <p>JOHNIL BERNADETTE L. INOCENTES</p>
+                        <p>SHIOPPY A. BITOLINAMISA</p>
                     </div>
 
                 </div>
@@ -200,8 +202,8 @@ export const DivEntourage = () => {
                     <div>
                         <h2 className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Veil</h2>
                         <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                            <p>Erwin Jay G. Negosa</p>
-                            <p>Leiyen Faye M. Negosa</p>
+                            <p>ERWIN JAY G. NEGOSA</p>
+                            <p>LEIYEN FAYE M. NEGOSA</p>
                         </div>
 
                     </div>
@@ -210,8 +212,8 @@ export const DivEntourage = () => {
                     <div>
                         <h2 className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Candle</h2>
                         <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                            <p>Ramil Martinez Jr.</p>
-                            <p>Krystelle Joy B. Dioneza</p>
+                            <p>RAMIL MARTINEZ JR..</p>
+                            <p>KRYSTELLE JOY DIONEZA</p>
                         </div>
 
                     </div>
@@ -220,8 +222,8 @@ export const DivEntourage = () => {
                     <div>
                         <h2 className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Cord</h2>
                         <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                            <p>Jerek Jae B. Areglo</p>
-                            <p>Rhea Rose R. Areglo</p>
+                            <p>JEREK JAE B. AREGLO</p>
+                            <p>RHEA ROSE R. AREGLO</p>
                         </div>
 
                     </div>
@@ -232,19 +234,19 @@ export const DivEntourage = () => {
                     {/* Ring Bearer */}
                     <div>
                         <h2 className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Ring Bearer</h2>
-                        <p className="text-xs md:text-sm lg:text-md xl:text-md">Mahmood Hilal B. Almaqbali</p>
+                        <p className="text-xs md:text-sm lg:text-md xl:text-md">MAHMOOD HILAL B. ALMAQBALI</p>
                     </div>
 
                     {/* Bible Bearer */}
                     <div>
                         <h2 className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Bible Bearer</h2>
-                        <p className="text-xs md:text-sm lg:text-md xl:text-md">Aethan Jeeg M. Negosa</p>
+                        <p className="text-xs md:text-sm lg:text-md xl:text-md">AETHAN JEEG M. NEGOSA</p>
                     </div>
 
                     {/* Coin Bearer */}
                     <div>
                         <h2 className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Coin Bearer</h2>
-                        <p className="text-xs md:text-sm lg:text-md xl:text-md">Kent Harvey A. Pio</p>
+                        <p className="text-xs md:text-sm lg:text-md xl:text-md">KENT HARVEY A. PIO</p>
                     </div>
                 </div>
 
@@ -252,9 +254,9 @@ export const DivEntourage = () => {
                 <div className="text-center">
                     <h2 className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Flower Girls</h2>
                     <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                        <p>Athena Zea S. Areglo</p>
-                        <p>Amber Shiloh L. Areglo</p>
-                        <p>Sofia Alexcys A. Bernil</p>
+                        <p>ATHENA ZEA S. AREGLO</p>
+                        <p>AMBER SHILOH L. AREGLO</p>
+                        <p>SOFIA ALEXCYS A. BERNIL</p>
                     </div>
                 </div>
             </div>
