@@ -7,13 +7,28 @@ import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
-  title: "K & K Wedding Invite",
-  description: "Kenneth & Ky Wedding Invitaiton",
+  title: "Kenneth & Khy Wedding",
+  description: "Join us to celebrate our union on December 22, 2024, at Nature's Village Resort.",
   icons: {
     icon: [
       { rel: "icon", url: "/icon.png" },
     ]
   },
+  openGraph: {
+    title: "Kenneth & Khy Wedding",
+    description: "Join us to celebrate our union on December 22, 2024, at Nature's Village Resort.",
+    url: "https://kenneth-and-khy.vercel.app",
+    images: [
+      {
+        url: "/preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Kenneth & Khy Wedding",
+      },
+    ],
+    type: "website",
+  },
+  metadataBase: new URL("https://kenneth-and-khy.vercel.app"),
 };
 
 export const libreFranklin = Libre_Franklin({
