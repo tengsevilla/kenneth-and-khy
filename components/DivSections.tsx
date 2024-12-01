@@ -112,7 +112,7 @@ export const DivEntourage = () => {
                         <p>ENGR. DAVE ABAÑO</p>
                         <p>MR. RANDOLPH G. ALEMAN</p>
                         <p>MR. DONDY DEPOSITORIO</p>
-                        <p>MR. JULITO L. FELICIANO</p>
+                        <p>MR. JULITO L. Felicano</p>
                         <p>ENGR. DANILO M. CONDINO</p>
                         <p>MR. JULIO LOZADA</p>
                         <p>DR. MARC ANDREI PALMA</p>
@@ -122,7 +122,7 @@ export const DivEntourage = () => {
                         <p>MR. CIPRIANO REMO</p>
                         <p>DR. ALEJANDRO ARANETA</p>
                         <p>MR. LEO NALAGON</p>
-                        <p>MR. LEONARDO ANCHA</p>
+                        <p>MR. LEONARDO ACHA</p>
                         <p>MR. DEMOSTHENES TOLEDO</p>
                     </div>
 
@@ -223,7 +223,7 @@ export const DivEntourage = () => {
                         <h2 className="text-sm md:text-sm lg:text-md xl:text-md font-bold mb-2">Cord</h2>
                         <div className="text-xs md:text-sm lg:text-md xl:text-md">
                             <p>JEREK JAE B. AREGLO</p>
-                            <p>RHEA ROSE R. AREGLO</p>
+                            <p>RHEA GRACE R. AREGLO</p>
                         </div>
 
                     </div>
