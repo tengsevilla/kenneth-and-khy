@@ -2,7 +2,10 @@
 
 import { TableColumns, TableManageGuests } from "@/components/TableManageGuests";
 import { useAttendeeCounts } from "@/hooks/useAttendeesCount";
+import { ECookies, EVENT_ID } from "@/lib/model";
+import { fetchEvent } from "@/lib/model/useEventAPI";
 import { getAllGuestRSVP } from "@/lib/model/useGuestAPI";
+import { getCookie, setCookie } from "@/lib/utils";
 import React from "react";
 
 export default function Manage() {
@@ -11,6 +14,8 @@ export default function Manage() {
     // const [guestsNotAttending, setGuestsNotAttending] = React.useState<number>(0);
     const [isFetching, setIsFetching] = React.useState<boolean>(false);
     const { guestsAttending, guestsNotAttending } = useAttendeeCounts(data);
+    // const accessToken = getCookie(ECookies.ACCESS_TOKEN);
+    const [accessToken, setAccessToken] = React.useState<string | undefined>(getCookie(ECookies.ACCESS_TOKEN));
 
     React.useEffect(() => {
         const fetchData = async () => {
@@ -25,8 +30,23 @@ export default function Manage() {
             }
         };
 
-        fetchData();
-    }, []);
+        if (!accessToken) {
+            try {
+                fetchEvent(EVENT_ID)
+                    .then((response) => {
+                        setCookie(ECookies.ACCESS_TOKEN, response.access_token, response.expiresIn);
+                        setAccessToken(response.access_token);
+                    });
+                console.info("Fetching cookies...");
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        } else {
+            fetchData();
+            console.info("App is ready! Cookies are set.");
+        }
+
+    }, [accessToken]);
 
     return (
         <div className="flex flex-1 flex-col gap-4 p-8" style={{ maxWidth: '100vw' }}>

@@ -5,7 +5,7 @@ import { ECookies, EVENT_ID } from "@/lib/model";
 import { fetchEvent } from "@/lib/model/useEventAPI";
 import useNavigationStore from "@/lib/store/useStoreNavigation";
 import { getCookie, setCookie } from "@/lib/utils";
-import { Suspense, useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 
 type SectionRefs = {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -13,7 +13,7 @@ type SectionRefs = {
 
 export default function Home() {
   const { activeUrl } = useNavigationStore();
-  const accessToken = getCookie(ECookies.ACCESS_TOKEN);
+  const [accessToken, setAccessToken] = useState<string | undefined>(getCookie(ECookies.ACCESS_TOKEN));
   // Refs for each section
   // Define refs with type safety for each section
   const refs: SectionRefs = {
@@ -47,10 +47,16 @@ export default function Home() {
     if (!accessToken) {
       try {
         fetchEvent(EVENT_ID)
-          .then((response) => setCookie(ECookies.ACCESS_TOKEN, response.access_token, response.expiresIn));
+          .then((response) => {
+            setCookie(ECookies.ACCESS_TOKEN, response.access_token, response.expiresIn);
+            setAccessToken(response.access_token);
+          });
+        console.info("Fetching cookies...");
       } catch (error) {
         console.error("Error fetching data:", error);
       }
+    } else {
+      console.info("App is ready! Cookies are set.");
     }
 
   }, [accessToken]);
