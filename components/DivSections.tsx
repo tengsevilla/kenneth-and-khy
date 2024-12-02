@@ -111,7 +111,7 @@ export const DivEntourage = () => {
                         <p>MR. FRANCIS B. INOCENTES</p>
                         <p>ENGR. DAVE ABAÑO</p>
                         <p>MR. RANDOLPH G. ALEMAN</p>
-                        <p>MR. DONDY DEPOSITORIO</p>
+                        <p>MR. DONDY Depositario</p>
                         <p>MR. JULITO L. Felicano</p>
                         <p>ENGR. DANILO M. CONDINO</p>
                         <p>MR. JULIO LOZADA</p>
@@ -131,7 +131,7 @@ export const DivEntourage = () => {
                         <p>MRS. EDITH E. NEGOSA</p>
                         <p>MRS. CECELIA ABAÑO</p>
                         <p>MRS. ARLENE G. BERMEJO</p>
-                        <p>MRS.MA. SUFIA C. DEPOSITORIO</p>
+                        <p>MRS.MA. SUFIA C. Depositario</p>
                         <p>MRS. MA. TRESSA G. ELBANBUENA</p>
                         <p>MRS GINA C. CONDINO</p>
                         <p>MRS LORLINIE M. ORTILLO</p>
