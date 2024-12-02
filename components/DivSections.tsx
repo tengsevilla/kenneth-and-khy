@@ -117,7 +117,7 @@ export const DivEntourage = () => {
                         <p>MR. JULIO LOZADA</p>
                         <p>DR. MARC ANDREI PALMA</p>
                         <p>MR. OCLYS G. TOONG</p>
-                        <p>MR. IRWIN NEGOSA</p>
+                        <p>MR. Erwin E. Negosa</p>
                         <p>MR. ALEXIS A. INOCENTES</p>
                         <p>MR. CIPRIANO REMO</p>
                         <p>DR. ALEJANDRO ARANETA</p>
@@ -128,7 +128,7 @@ export const DivEntourage = () => {
 
                     {/* Female Sponsors */}
                     <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                        <p>MRS. EDITH E. NEGOSA</p>
+                        <p>MRS. EDITHA E. NEGOSA</p>
                         <p>MRS. CECELIA ABAÑO</p>
                         <p>MRS. ARLENE G. BERMEJO</p>
                         <p>MRS.MA. SUFIA C. Depositario</p>
