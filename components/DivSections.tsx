@@ -133,10 +133,10 @@ export const DivEntourage = () => {
                         <p>MRS. ARLENE G. BERMEJO</p>
                         <p>MRS.MA. SUFIA C. Depositario</p>
                         <p>MRS. MA. TRESSA G. ELBANBUENA</p>
-                        <p>MRS GINA C. CONDINO</p>
-                        <p>MRS LORLINIE M. ORTILLO</p>
+                        <p>MRS. GINA C. CONDINO</p>
+                        <p>MS. LORLINIE M. ORTILLO</p>
                         <p>MRS. JONALIE G. PABIANIA</p>
-                        <p>MRS EUGENE DELIGHT O. MAGBANUA</p>
+                        <p>MRS. EUGENE DELIGHT O. MAGBANUA</p>
                         <p>MRS. JEAN G. NEGOSA</p>
                         <p>MS. CHERY TAN</p>
                         <p>MRS. LILY REMO</p>
