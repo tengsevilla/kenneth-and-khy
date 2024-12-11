@@ -100,7 +100,7 @@ export default function FormRSVP() {
                     A favor of response is requested
                 </div>
                 <div className="text-xs md:text-sm lg:text-md xl:text-md">
-                    on or before Dec 10, 2024
+                    on or before Dec 15, 2024
                 </div>
             </div>
             <Form {...form}>

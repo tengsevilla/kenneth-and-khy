@@ -388,7 +388,7 @@ export const DivFAQs = () => {
             <div className="flex flex-col gap-2">
                 <div className="text-xs md:text-xs lg:text-sm xl:text-sm font-bold uppercase mt-8">WHEN SHOULD I RSVP?</div>
                 <div className="text-xs md:text-sm lg:text-md xl:text-md uppercase">
-                    PLEASE RSVP NO LATER THAN DEC 10, 2024, YOU MAY SEND US PERSONAL MESSAGE ON FACEBOOK.
+                    PLEASE RSVP NO LATER THAN DEC 15, 2024, YOU MAY SEND US PERSONAL MESSAGE ON FACEBOOK.
                 </div>
 
                 <div className="text-xs md:text-xs lg:text-sm xl:text-sm font-bold uppercase mt-8">WHAT TIME SHOULD I ARRIVE?</div>
