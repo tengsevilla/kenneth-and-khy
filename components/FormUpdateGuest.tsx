@@ -17,7 +17,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { TableColumns } from "./TableManageGuests";
-import { updateGuestRSVP } from "@/lib/model/useGuestAPI";
+// import { updateGuestRSVP } from "@/lib/model/useGuestAPI";
 
 const formSchema = z.object({
     rsvpGuest: z.string().min(1, "Name is required"),
@@ -42,9 +42,10 @@ export function FormUpdateGuest({ guest, onSubmitted }: { guest: TableColumns, o
     async function onSubmit(values: z.infer<typeof formSchema>) {
         setIsLoading(true);
         const payload: TableColumns = { ...values, rsvpId: guest.rsvpId, rsvpNumOfAttendees: values.rsvpNumOfAttendees ?? "0" };
-        await updateGuestRSVP({ ...payload, rsvpContact: "" }).then(() => {
-            onSubmitted(payload);
-        });
+        // await updateGuestRSVP({ ...payload, rsvpContact: "" }).then(() => {
+        //     onSubmitted(payload);
+        // });
+        onSubmitted(payload);
         setIsLoading(false);
     }
 

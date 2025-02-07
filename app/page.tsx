@@ -1,10 +1,10 @@
 "use client"
 import { DivAttire, DivEntourage, DivFAQs, DivGiftGuide, DivImages, DivLocation, DivSnapAndShare, DivWedding } from "@/components/DivSections";
 import FormRSVP from "@/components/FormRSVP";
-import { ECookies, EVENT_ID } from "@/lib/model";
-import { fetchEvent } from "@/lib/model/useEventAPI";
+import { ECookies, /*EVENT_ID*/ } from "@/lib/model";
+// import { fetchEvent } from "@/lib/model/useEventAPI";
 import useNavigationStore from "@/lib/store/useStoreNavigation";
-import { getCookie, setCookie } from "@/lib/utils";
+import { getCookie, /*setCookie*/ } from "@/lib/utils";
 import { Suspense, useEffect, useRef, useState } from "react";
 
 type SectionRefs = {
@@ -52,6 +52,7 @@ export default function Home() {
         //     setCookie(ECookies.ACCESS_TOKEN, response.access_token, response.expiresIn);
         //     setAccessToken(response.access_token);
         //   });
+        setAccessToken("1234567890");
         console.info("Fetching cookies...");
       } catch (error) {
         console.error("Error fetching data:", error);

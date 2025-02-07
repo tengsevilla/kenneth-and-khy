@@ -2,10 +2,10 @@
 
 import { TableColumns, TableManageGuests } from "@/components/TableManageGuests";
 import { useAttendeeCounts } from "@/hooks/useAttendeesCount";
-import { ECookies, EVENT_ID } from "@/lib/model";
-import { fetchEvent } from "@/lib/model/useEventAPI";
-import { getAllGuestRSVP } from "@/lib/model/useGuestAPI";
-import { getCookie, setCookie } from "@/lib/utils";
+import { ECookies, /*EVENT_ID*/ } from "@/lib/model";
+// import { fetchEvent } from "@/lib/model/useEventAPI";
+// import { getAllGuestRSVP } from "@/lib/model/useGuestAPI";
+import { getCookie, /*setCookie*/ } from "@/lib/utils";
 import React from "react";
 
 export default function Manage() {
@@ -47,7 +47,8 @@ export default function Manage() {
         //     fetchData();
         //     console.info("App is ready! Cookies are set.");
         // }
-
+        setAccessToken("1234567890");
+        setIsFetching(false);
     }, [accessToken]);
 
     return (

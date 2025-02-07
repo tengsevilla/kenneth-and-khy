@@ -16,7 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "./ui/radio-group-inverted";
 import { DialogConfirmed } from "./DialogConfirmed";
-import { createGuestRSVP, IGuest } from "@/lib/model/useGuestAPI";
+// import { createGuestRSVP, IGuest } from "@/lib/model/useGuestAPI";
 import { useSearchParams } from "next/navigation";
 
 // const formSchema = z.object({
@@ -58,14 +58,16 @@ export default function FormRSVP() {
 
     function onSubmit(values: z.infer<typeof formSchema>) {
         setIsLoading(true);
+        console.log(values)
         try {
-            const payload: IGuest = {
-                rsvpGuest: values.rsvpGuest,
-                rsvpContact: '',
-                rsvpAttending: values.rsvpAttending,
-                rsvpNumOfAttendees: (isAttending === "yes") ? values.rsvpNumOfAttendees ?? "0" : "0",
-            };
-            // @Note: disabled
+                        // @Note: disabled
+            // const payload: IGuest = {
+            //     rsvpGuest: values.rsvpGuest,
+            //     rsvpContact: '',
+            //     rsvpAttending: values.rsvpAttending,
+            //     rsvpNumOfAttendees: (isAttending === "yes") ? values.rsvpNumOfAttendees ?? "0" : "0",
+            // };
+
             // createGuestRSVP(payload).then((response) => {
             //     if (response.status === 200) {
             //         setIsOpen(true);
