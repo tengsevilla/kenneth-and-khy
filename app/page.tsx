@@ -46,11 +46,12 @@ export default function Home() {
   useEffect(() => {
     if (!accessToken) {
       try {
-        fetchEvent(EVENT_ID)
-          .then((response) => {
-            setCookie(ECookies.ACCESS_TOKEN, response.access_token, response.expiresIn);
-            setAccessToken(response.access_token);
-          });
+        // @Note: Disabled
+        // fetchEvent(EVENT_ID)
+        //   .then((response) => {
+        //     setCookie(ECookies.ACCESS_TOKEN, response.access_token, response.expiresIn);
+        //     setAccessToken(response.access_token);
+        //   });
         console.info("Fetching cookies...");
       } catch (error) {
         console.error("Error fetching data:", error);

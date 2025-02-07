@@ -65,11 +65,12 @@ export default function FormRSVP() {
                 rsvpAttending: values.rsvpAttending,
                 rsvpNumOfAttendees: (isAttending === "yes") ? values.rsvpNumOfAttendees ?? "0" : "0",
             };
-            createGuestRSVP(payload).then((response) => {
-                if (response.status === 200) {
-                    setIsOpen(true);
-                }
-            });
+            // @Note: disabled
+            // createGuestRSVP(payload).then((response) => {
+            //     if (response.status === 200) {
+            //         setIsOpen(true);
+            //     }
+            // });
         } catch (error) {
             console.error("Error submitting data:", error);
         } finally {
@@ -168,7 +169,7 @@ export default function FormRSVP() {
                     }
 
                     {/* Submit Button */}
-                    <Button type="submit" className="w-full" isLoading={isLoading} variant={'secondary'}>
+                    <Button type="submit" className="w-full" isLoading={isLoading} variant={'secondary'} disabled={true}>
                         Submit
                     </Button>
                 </form>

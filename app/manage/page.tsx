@@ -18,33 +18,35 @@ export default function Manage() {
     const [accessToken, setAccessToken] = React.useState<string | undefined>(getCookie(ECookies.ACCESS_TOKEN));
 
     React.useEffect(() => {
-        const fetchData = async () => {
-            setIsFetching(true); // Start fetching
-            try {
-                const res = await getAllGuestRSVP();
-                setData(res.data);
-            } catch (error) {
-                console.error("Error fetching RSVP data:", error);
-            } finally {
-                setIsFetching(false); // Done fetching
-            }
-        };
 
-        if (!accessToken) {
-            try {
-                fetchEvent(EVENT_ID)
-                    .then((response) => {
-                        setCookie(ECookies.ACCESS_TOKEN, response.access_token, response.expiresIn);
-                        setAccessToken(response.access_token);
-                    });
-                console.info("Fetching cookies...");
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        } else {
-            fetchData();
-            console.info("App is ready! Cookies are set.");
-        }
+        // @Note: disabled.
+        // const fetchData = async () => {
+        //     setIsFetching(true); // Start fetching
+        //     try {
+        //         const res = await getAllGuestRSVP();
+        //         setData(res.data);
+        //     } catch (error) {
+        //         console.error("Error fetching RSVP data:", error);
+        //     } finally {
+        //         setIsFetching(false); // Done fetching
+        //     }
+        // };
+
+        // if (!accessToken) {
+        //     try {
+        //         fetchEvent(EVENT_ID)
+        //             .then((response) => {
+        //                 setCookie(ECookies.ACCESS_TOKEN, response.access_token, response.expiresIn);
+        //                 setAccessToken(response.access_token);
+        //             });
+        //         console.info("Fetching cookies...");
+        //     } catch (error) {
+        //         console.error("Error fetching data:", error);
+        //     }
+        // } else {
+        //     fetchData();
+        //     console.info("App is ready! Cookies are set.");
+        // }
 
     }, [accessToken]);
 
